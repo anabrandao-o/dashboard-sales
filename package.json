@@ -1,0 +1,15 @@
+{
+  "devDependencies": {
+    "@types/axios": "^0.9.36",
+    "@types/pg": "^8.15.6",
+    "@types/recharts": "^1.8.29",
+    "eslint": "^9.39.1",
+    "prettier": "^3.6.2",
+    "sass": "^1.93.3"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^5.1.0",
+    "pg": "^8.16.3"
+  }
+}
