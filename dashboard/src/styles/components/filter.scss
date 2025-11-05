@@ -1,0 +1,20 @@
+.filter-container {
+  display: flex;
+  gap: $gap-base;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+
+  select, input[type="date"] {
+    padding: $input-padding;
+    border-radius: $border-radius;
+    border: 1px solid $color-border;
+    font-size: $font-size-base;
+    background-color: $color-white;
+    transition: border-color 0.2s ease;
+
+    &:focus {
+      border-color: $color-primary;
+      outline: none;
+    }
+  }
+}

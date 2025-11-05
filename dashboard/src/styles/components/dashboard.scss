@@ -1,0 +1,65 @@
+.dashboard-container {
+  padding: 16px;
+  font-family: 'Inter', sans-serif;
+  background-color: $color-background;
+
+  h2 {
+    margin-bottom: 16px;
+  }
+
+  .filter-container {
+    display: flex;
+    gap: 12px;
+    flex-wrap: wrap;
+    margin-bottom: 16px;
+    align-items: flex-start;
+
+    select,
+    input[type="date"] {
+      padding: 8px;
+      font-size: 14px;
+      border-radius: 8px;
+      border: 1px solid $color-border;
+      min-width: 160px;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+
+    .advanced-filters {
+      display: none;
+      flex-direction: row;
+      gap: 12px;
+      align-items: flex-end;
+      margin-top: 4px;
+
+      &.active {
+        display: flex;
+      }
+    }
+
+    .toggle-advanced {
+      padding: 8px 12px;
+      font-size: 14px;
+      border-radius: 8px;
+      border: none;
+      background-color: $color-primary;
+      color: $color-white;
+      cursor: pointer;
+      transition: background-color 0.2s ease;
+
+      &:hover {
+        background-color: darken($color-primary, 10%);
+      }
+    }
+  }
+
+  .chart-wrapper {
+    width: 100%;
+    min-height: 300px;
+    background-color: #fff;
+    padding: 16px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  }
+}
